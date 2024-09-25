@@ -48,8 +48,8 @@ router.get('/', async (req, res) => {
     category: req.query.category,
     startdate: req.query.start_date, 
     tag: req.query.tag,
-    limit: parseInt(req.query.limit, 10) || 10,
-    offset: parseInt(req.query.offset, 10) || 0,
+    limit: parseInt(req.query.limit, 100) || 100,
+    offset: parseInt(req.query.offset, 100) || 0,
   };
   console.log("Filters:", filters);
 

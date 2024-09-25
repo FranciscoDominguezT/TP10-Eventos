@@ -228,7 +228,7 @@ export default class EventListRepository {
 
   getEventsAsync = async (filters) => {
     const client = new Client(DBConfig);
-    const { name, category, startdate, tag, limit = 10, offset = 0 } = filters || {};
+    const { name, category, startdate, tag, limit = 100, offset = 0 } = filters || {};
     const conditions = [];
     const values = [];
 

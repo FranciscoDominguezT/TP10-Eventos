@@ -27,7 +27,7 @@ export default function Home() {
   }, []);
 
   const handleEventClick = (eventId) => {
-    router.push(`/event/${eventId}`);
+    router.push(`/evento/${eventId}`);
   };
 
   if (isLoading) {
